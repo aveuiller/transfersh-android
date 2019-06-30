@@ -5,4 +5,7 @@
     <string name="upload_url">Url du service</string>
     <string name="upload_result">Lien</string>
     <string name="select_file">Sélectionnez un fichier</string>
+    <string name="result_copied">Résultat copié dans le presse-papier</string>
+    <string name="unable_to_send">Impossible d\'envoyer la donnée</string>
+    <string name="storage_permission_denied" translatable="false">Accès au stockage refusé</string>
 </resources>

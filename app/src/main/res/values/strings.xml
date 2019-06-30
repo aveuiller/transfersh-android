@@ -5,4 +5,8 @@
     <string name="https_hint" translatable="false">https://...</string>
     <string name="upload_result">Link</string>
     <string name="select_file">Select a file</string>
+    <string name="result_copied">Result copied to clipboard</string>
+    <string name="unable_to_send">Unable to send data</string>
+    <string name="filter_title_actionview" translatable="false">Transfer.sh Android</string>
+    <string name="storage_permission_denied" translatable="false">Access to storage denied</string>
 </resources>
