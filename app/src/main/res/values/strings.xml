@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Transfersh</string>
+    <string name="upload">Upload</string>
+    <string name="upload_url">Service url</string>
+    <string name="https_hint" translatable="false">https://...</string>
+    <string name="upload_result">Link</string>
+    <string name="select_file">Select a file</string>
+</resources>

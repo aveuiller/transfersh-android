@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Transfersh</string>
+    <string name="upload">Téléverser</string>
+    <string name="upload_url">Url du service</string>
+    <string name="upload_result">Lien</string>
+    <string name="select_file">Sélectionnez un fichier</string>
+</resources>
