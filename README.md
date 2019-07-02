@@ -2,6 +2,8 @@
 
 Android application to easily use [transfer.sh](https://github.com/dutchcoders/transfer.sh) service.
 
+The application is currently not hosted on the Google Play Store, but the apk file is available in the releases.
+
 ## Usage
 
 1. Chose your own endpoint.
