@@ -6,37 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/upload_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:onClick="doUploadMedia"
-        android:text="@string/upload"
-        app:layout_constraintBottom_toTopOf="@+id/upload_result"
-        tools:layout_editor_absoluteX="161dp" />
-
-    <ImageView
-        android:id="@+id/image_preview"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="#69D6D6D6"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/upload_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/directory_button"
-        app:srcCompat="@android:color/transparent" />
-
     <TextView
         android:id="@+id/url_label"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/upload_url"
@@ -46,10 +18,10 @@
 
     <EditText
         android:id="@+id/url_editable"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
+        android:layout_width="302dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="10dp"
         android:hint="@string/https_hint"
         android:inputType="textUri"
@@ -67,7 +39,8 @@
         android:onClick="doSelectMedia"
         app:layout_constraintStart_toEndOf="@+id/camera_button"
         app:layout_constraintTop_toBottomOf="@+id/url_editable"
-        app:srcCompat="@android:drawable/ic_menu_upload" />
+        app:srcCompat="@android:drawable/ic_menu_upload"
+        android:contentDescription="@string/description_select_button" />
 
     <ImageButton
         android:id="@+id/camera_button"
@@ -76,7 +49,43 @@
         android:onClick="doCaptureMedia"
         app:layout_constraintBottom_toBottomOf="@+id/directory_button"
         app:layout_constraintStart_toStartOf="@+id/image_preview"
-        app:srcCompat="@android:drawable/ic_menu_camera" />
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        android:contentDescription="@string/description_camera_button" />
+
+
+    <ImageView
+        android:id="@+id/image_preview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#69D6D6D6"
+        android:contentDescription="@string/description_preview"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/upload_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/directory_button"
+        app:srcCompat="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/upload_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="doUploadMedia"
+        android:text="@string/upload"
+        app:layout_constraintBottom_toTopOf="@+id/upload_result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/upload_result"
@@ -98,5 +107,6 @@
         android:onClick="doCopyLink"
         app:layout_constraintBottom_toBottomOf="@+id/upload_result"
         app:layout_constraintEnd_toEndOf="@+id/image_preview"
-        app:srcCompat="?attr/actionModeCopyDrawable" />
+        app:srcCompat="?attr/actionModeCopyDrawable"
+        android:contentDescription="@string/description_copy_button" />
 </android.support.constraint.ConstraintLayout>

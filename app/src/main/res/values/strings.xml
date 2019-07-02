@@ -8,5 +8,9 @@
     <string name="result_copied">Result copied to clipboard</string>
     <string name="unable_to_send">Unable to send data</string>
     <string name="filter_title_actionview" translatable="false">Transfer.sh Android</string>
-    <string name="storage_permission_denied" translatable="false">Access to storage denied</string>
+    <string name="storage_permission_denied">Access to storage denied</string>
+    <string name="description_preview">Preview in case of an uploaded image</string>
+    <string name="description_copy_button">Copy to clipboard</string>
+    <string name="description_camera_button">Take a picture</string>
+    <string name="description_select_button">Select a file</string>
 </resources>
